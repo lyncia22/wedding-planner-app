@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ff4dab, #1a1a1a); /* pink to black gradient */
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255, 77, 171, 0.15); /* translucent pink */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 77, 171, 0.3); /* pink shadow */
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid rgba(255, 77, 171, 0.4);
+}
+
+.login-card h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #ff4dab; /* pink text */
+}
+
+.login-card input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ff4dab;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.login-card input::placeholder {
+  color: #ffb3d9; /* lighter pink placeholder */
+}
+
+.login-card button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #ff4dab;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #e63f96; /* darker pink on hover */
+}
+
+.login-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffb3d9; /* soft pink text */
+}
