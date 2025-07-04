@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Onboarding.css";
+import "./onboarding.css";
 
 export default function Onboarding() {
   const navigate = useNavigate();
