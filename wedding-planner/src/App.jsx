@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import DashboardNavbar from "./components/DashboardNavbar";
 import Onboarding from "./onboarding/onboarding";
 import Dashboard from "./dashboard/dashboard";
-import Login from "./login/Login";
+import Login from "./login/login";
 import SignUp from "./signup/signup";
 
 function AppContent({ isLoggedIn, setIsLoggedIn }) {
