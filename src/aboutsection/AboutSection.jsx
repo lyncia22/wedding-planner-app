@@ -1,6 +1,6 @@
 // AboutSection.jsx
 import React from "react";
-import "./aboutsection.css";
+import "./AboutSection.css";
 
 export default function AboutSection() {
   return (
