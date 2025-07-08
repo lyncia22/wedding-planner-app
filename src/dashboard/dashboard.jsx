@@ -1,6 +1,6 @@
 import React from "react";
 import AboutSection from "../aboutsection/AboutSection";
-import "./Dashboard.css";
+import "./dashboard.css";
 
 export default function Dashboard() {
   return (
