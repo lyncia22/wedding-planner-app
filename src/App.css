@@ -4,3 +4,9 @@ body {
 body {
   font-family: 'Montserrat', sans-serif;
 }
+body {
+  background: #fff; /* ✅ plain white background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}

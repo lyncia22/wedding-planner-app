@@ -7,12 +7,11 @@ import Onboarding from "./onboarding/onboarding";
 import Dashboard from "./dashboard/dashboard";
 import Login from "./login/login";
 import SignUp from "./signup/signup";
- 
+import VendorProfile from "./VendorProfile/VendorProfile";
+import "./App.css";
 
 function AppContent({ isLoggedIn, setIsLoggedIn }) {
   const location = useLocation();
-
-  // Show Navbar on public pages (Onboarding, Login, SignUp)
   const isPublicPage = ["/", "/login", "/signup"].includes(location.pathname);
 
   return (
@@ -21,33 +20,32 @@ function AppContent({ isLoggedIn, setIsLoggedIn }) {
 
       <Routes>
         <Route path="/" element={<Onboarding />} />
-
         <Route
           path="/dashboard"
           element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" replace />}
         />
-
         <Route
           path="/login"
           element={<Login onLogin={() => setIsLoggedIn(true)} />}
         />
-
         <Route
           path="/signup"
           element={<SignUp onSignUp={() => setIsLoggedIn(true)} />}
         />
+        <Route path="/vendors/:vendorSlug" element={<VendorProfile />} />
       </Routes>
     </>
   );
 }
 
-// ✅ This is what you were missing:
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <Router>
-      <AppContent isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      <Routes>
+        <Route path="*" element={<AppContent isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+      </Routes>
     </Router>
   );
 }

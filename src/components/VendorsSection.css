@@ -1,0 +1,47 @@
+.vendors-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.vendors-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.vendors-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vendor-card {
+  background-color: #f8d7da; /* 🌹 Soft rose background for each card */
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 250px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-card:hover {
+  transform: translateY(-5px);
+}
+
+.vendor-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.vendor-card h3 {
+  margin: 0.5rem 0;
+}
+
+.vendor-card p {
+  color: #555;
+  font-size: 1rem;
+}
